@@ -1,5 +1,5 @@
 :root {
-  --body-background-color: #f5f5f5;
+  --body-background-color: #fff;
   --header-background-color: #ECECEC;
   --dark-background-color: #2F303A;
   --section-light-background-color: #F5F4FA;
@@ -26,12 +26,26 @@ ul {
   padding: 0;
   margin: 0;
 }
+
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+h3 {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+
+.visual-hidden {
+  display: none;
+}
 
 .page-header {
   border-bottom: 1px solid var(--header-background-color);
@@ -40,14 +54,17 @@ img {
 
 .nav-cont {
   display: flex;
-  justify-content: space-between;
 }
+
 .nav-address {
-  margin-left: 94px;
+  margin-left: auto;
 }
+
 .section-hero {
-  height: 600px;
   text-align: center;
+  padding: 200px 0;
+
+  background-color: var(--dark-background-color);
 }
 
 .page-title {
@@ -57,7 +74,6 @@ img {
   text-align: center;
   letter-spacing: 0.06em;
 
-  padding-top: 200px;
   padding-bottom: 30px;
   margin: 0 auto;
 
@@ -80,6 +96,10 @@ img {
   width: 270px;
 }
 
+.section-specialty {
+  padding-top: 0;
+}
+
 .specialty-title {
   font-weight: 700;
   line-height: 1.17;
@@ -97,11 +117,22 @@ img {
   line-height: 1.71;
 }
 
+.section-team {
+  background-color: var(--section-light-background-color);
+}
+
+.team-text {
+  padding: 30px 0;
+  background-color: var(--body-background-color);
+}
+
 .team-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.1875;
   text-align: center;
+
+  margin-bottom: 10px;
 }
 
 .team-description {
@@ -113,7 +144,6 @@ img {
 
 .nav-list {
   margin-left: 93px;
-  padding: 32px;
   color: var(--dark-text-color);
   
 }
@@ -137,17 +167,11 @@ img {
   color: var(--highlited-text-color);
 }
 
-.section-hero {
-  background-color: var(--dark-background-color);
-}
 
-.section-team {
-  background-color: var(--section-light-background-color);
-}
 
 .page-footer {
   background-color: var(--dark-background-color);
-  padding: 60px ;
+  padding: 60px 0;
 }
 
 .page-footer,
@@ -158,7 +182,12 @@ img {
 .address-footer {
   font-style: normal;
   line-height: 1.71;
-  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.address-margin {
+  display: inline-block;
+  margin-bottom: 9px;
 }
 
 .company-address {
@@ -174,7 +203,8 @@ img {
 .link {
   font-weight: 500;
   text-decoration: none;
-  
+  padding: 32px 0;
+
   color: var(--dark-text-color);
 }
 
@@ -218,7 +248,7 @@ img {
   text-align: center;
 
   padding: 6px 22px;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
   color: var(--dark-text-color);
 }
 
@@ -232,15 +262,20 @@ img {
   padding: 94px 0;
 }
 
+.portfolio-ul {
+  margin-bottom: 50px;
+}
+
 .portfolio {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
-  padding-top: 34px;
 }
 
 .portfolio-card{
   border-bottom: 1px solid #EEEEEE;
+  border-left: 1px solid #EEEEEE;
+  border-right: 1px solid #EEEEEE;
   padding: 20px 24px;
 }
 
@@ -270,19 +305,20 @@ img {
   align-items: center;
 }
 
-.c-g-50 {
+.c-g-big {
   column-gap: 50px;
 }
 
-.c-g-30 {
+.c-g-middle {
   column-gap: 30px;
 }
 
-.c-g-8 {
+.c-g-small {
   column-gap: 8px;
 }
 
 .container {
   width: 1200px;
   margin: 0 auto;
+  padding: 0 15px;
 }
