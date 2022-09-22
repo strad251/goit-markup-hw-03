@@ -42,6 +42,11 @@ h3 {
   margin-bottom: 10px;
 }
 
+.section-title,
+.specialty-title,
+.team-title {
+  color: var(--dark-text-color);
+}
 
 .visual-hidden {
   display: none;
@@ -50,6 +55,29 @@ h3 {
 .page-header {
   border-bottom: 1px solid var(--header-background-color);
   background-color: var(--white-text-color);
+}
+
+.logo {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-size: 26px;
+  line-height: 1.19;
+
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+}
+.link.logo {
+    font-weight: 700;
+}
+
+.logo:hover,
+.logo:focus {
+  color: var(--highlited-text-color);
+}
+
+.logo-color {
+  color: var(--highlited-text-color);
 }
 
 .nav-cont {
@@ -68,14 +96,15 @@ h3 {
 }
 
 .page-title {
+
   font-size: 44px;
   font-weight: 900;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
 
-  padding-bottom: 30px;
   margin: 0 auto;
+  margin-bottom: 30px;
 
   width: 696px;
   color: var(--white-text-color);
@@ -105,16 +134,16 @@ h3 {
   line-height: 1.17;
 }
 
-
-.section-title,
-.specialty-title,
-.team-title {
-  color: var(--dark-text-color);
+.ul-specialty {
+  display: flex;
 }
-
 
 .specialty-description {
   line-height: 1.71;
+}
+
+.section-what {
+  padding-top: 0;
 }
 
 .section-team {
@@ -148,27 +177,6 @@ h3 {
   
 }
 
-
-.logo {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-
-}
-
-.logo:hover,
-.logo:focus {
-  color: var(--highlited-text-color);
-}
-
-.logo-color {
-  color: var(--highlited-text-color);
-}
-
-
-
 .page-footer {
   background-color: var(--dark-background-color);
   padding: 60px 0;
@@ -199,11 +207,13 @@ h3 {
 }
 
 
+.nav-link {
+  padding: 32px 0;
+}
 
 .link {
   font-weight: 500;
   text-decoration: none;
-  padding: 32px 0;
 
   color: var(--dark-text-color);
 }
@@ -213,11 +223,15 @@ h3 {
   color:  var(--highlited-text-color);
 }
 
+.link.active {
+  color: var(--highlited-text-color);
+}
 .btn {
   cursor: pointer;
 }
 
 .btn-main {
+  
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -283,7 +297,7 @@ h3 {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-
+  margin-bottom: 4px;
   letter-spacing: 0.06em;
 
   color: var(--dark-text-color);
@@ -305,15 +319,15 @@ h3 {
   align-items: center;
 }
 
-.c-g-big {
+.col-gap-big {
   column-gap: 50px;
 }
 
-.c-g-middle {
+.col-gap-middle {
   column-gap: 30px;
 }
 
-.c-g-small {
+.col-gap-small {
   column-gap: 8px;
 }
 
