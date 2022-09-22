@@ -319,15 +319,15 @@ h3 {
   align-items: center;
 }
 
-.col-gap-big {
+.col-gap-header {
   column-gap: 50px;
 }
 
-.col-gap-middle {
+.col-gap-main {
   column-gap: 30px;
 }
 
-.col-gap-small {
+.col-gap-portfolio {
   column-gap: 8px;
 }
 
