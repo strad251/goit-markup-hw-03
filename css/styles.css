@@ -48,8 +48,18 @@ h3 {
   color: var(--dark-text-color);
 }
 
-.visual-hidden {
-  display: none;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .page-header {
@@ -142,7 +152,7 @@ h3 {
   line-height: 1.71;
 }
 
-.section-what {
+.section.section-what {
   padding-top: 0;
 }
 
@@ -199,6 +209,7 @@ h3 {
 }
 
 .company-address {
+  font-weight: normal;
   opacity: .6;
   text-decoration: none;
   line-height: 1.14;
